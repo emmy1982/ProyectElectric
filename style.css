@@ -1,0 +1,357 @@
+
+:root{
+    --colorBlue:rgb(48, 107, 235);
+    --colorGray:rgb(72, 72, 72);
+    --colorYelow:rgb(244, 158, 53);
+    --colorBack: rgb(240, 237, 233);
+    --colorWhite: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorBack);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "my-header"
+    "my-main"
+    "my-footer";
+}
+
+header{
+    grid-area: my-header;
+}
+main{
+    grid-area: my-main;
+}
+footer{
+    grid-area: my-footer;
+}
+.link-nav a{
+    color: white;
+    text-decoration: none;
+}
+.link-nav a:hover{
+    color: var(--colorYelow);
+}
+.nav-itemIni li a{
+    color: var(--colorYelow);
+}
+
+.container-formUp{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--colorBlue);
+    color:var(--colorWhite);
+}
+form{
+    padding: 20px;
+}
+
+.card-index{
+    background-color:transparent;
+}
+.title-1{
+    font-size: 3rem;
+}
+.btn-consultenos a{
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+.btn-consultenos-1 a{
+    color: var(--colorGray);
+    text-decoration: none;
+    font-weight: 600;
+}
+.container-formDown-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--colorGray);
+    color:var(--colorWhite);
+    padding: 15px;
+}
+.social-link  i{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: var(--colorWhite);
+}
+.social-link a{
+    text-decoration: none;
+}
+.img_cards{
+    height: 400px; 
+    box-shadow: 5px 5px 20px 5px rgb(156, 156, 156);
+}
+.p-info{
+    display: flex;
+    background-color:var(--colorYelow);
+    border-top: 4px solid var(--colorBlue);
+    flex-direction: column;
+}
+.p-info1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: -25px;
+}
+
+.infoParra{
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    
+}
+/* *****Footer***** */
+
+.footer_1{
+    background-color:var(--colorGray);
+}
+
+
+.footer-contact a {
+    color: var(--colorWhite);
+    text-decoration: none;
+    margin-right: 5px;
+    list-style: none;
+}
+.footer-contact a i{
+    margin-right: 10px;
+}
+
+.footer-contact {
+    margin-top: -25px;
+}
+   
+.card-img-0{
+    font-size: 3rem;
+    text-shadow:3px 3px 4px rgb(0, 0, 0);
+}
+
+.card-img{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow:3px 3px 4px rgb(17, 17, 17);
+}
+.card-img-shadow{
+    box-shadow: 5px 5px 15px 5px grey;
+}
+
+
+/*************BotonWhatsapp**********/
+
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+    position: fixed;
+    z-index: 100;
+    bottom: 30px;
+    left: 15px;
+}
+.whatsapp-button:hover {
+    background-color: #1EBEA5;
+}
+.whatsapp-button .fa-whatsapp {
+   
+    font-size: 20px;
+}
+/* *****BotonUp***********/
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: none; 
+    z-index: 1000; 
+}
+
+#scrollToTopBtn img{
+  
+    width: 40px;
+    height: auto;
+    
+}
+
+
+/* *******************************************************************************************
+********************************************************************************************+*
+*****************************ELECTRICIDAD GENERAL******************************************* */
+
+
+.gradient-1{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    background-size: cover;
+    background-position: center,center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gradient-2{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: center,center;
+    background-repeat: no-repeat;
+    height:  100%;
+    width: 100%;
+}
+
+.gradient-3{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(44, 43, 43, 0.4);
+    background-size: cover;
+    background-position: center,center;
+    background-repeat: no-repeat;
+    height:  100%;
+    width: 100%;
+}
+
+
+
+
+
+/* carorsel */
+.carousel_nuestrosT{
+    width: 100%;
+   
+   
+}
+
+
+/* *******************************************************************************************
+********************************************************************************************+*
+****************************PLACAS FOTOVOLTAICAS******************************************* */
+
+
+
+
+.img_galery{
+   width: 100%; 
+   height: 340px;
+   object-fit: cover;
+   margin: 5px;
+   cursor: pointer;
+}
+.img_galery:hover{
+   border: 5px solid var(--colorBack);
+    box-shadow: 5px 5px 15px 5px #929292;
+
+}
+
+
+
+/* *********************************************************************************************************++
++************************************************************************************************************
+**************************************************************************************************************/
+
+
+
+ .img_galery-1{
+    width: 370px;
+    height: 350px;
+    object-fit: cover;
+}  
+
+/* ********************************************************************************************
+************************************************************************************************
++*********************************CONTACTO**************************************************** */
+
+
+#contacto {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.p-contacto {
+    text-align: center;
+    color: #666;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 1;
+}
+
+.formulario-contacto, .info-contacto {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.info-contacto h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.mapa {
+    margin-top: 20px;
+}
+
